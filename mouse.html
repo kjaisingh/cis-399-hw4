@@ -1,0 +1,138 @@
+<html><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <script src="/assets/js/jquery.js"></script>
+  <script src="/assets/js/paper.js"></script>
+  <script src="/assets/js/codemirror.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10082945-6']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <title>Paper.js — Chain</title>
+</head>
+  <body class="fullscreen" data-new-gr-c-s-check-loaded="14.1097.0" data-gr-ext-installed="" style="" data-new-gr-c-s-loaded="14.1097.0">
+    <nav>
+      <h1><a href="/">Paper.js</a></h1>
+<ul>
+  <li><a href="/about/">About</a>
+  </li>
+  <li><a href="/features/">Features</a>
+  </li>
+  <li class="spacer"></li>
+  <li><a href="/examples/">Examples</a>
+<ul>
+  <li><a href="/examples/boolean-operations/">Boolean Operations</a></li>
+  <li><a href="/examples/candy-crash/">Candy Crash</a></li>
+  <li><a href="/examples/satie-liked-to-draw/">Satie Liked To Draw</a></li>
+  <li class="active"><a href="/examples/chain/">Chain</a></li>
+  <li><a href="/examples/tadpoles/">Tadpoles</a></li>
+  <li><a href="/examples/nyan-rainbow/">Nyan Rainbow</a></li>
+  <li><a href="/examples/rounded-rectangles/">Rounded Rectangles</a></li>
+  <li><a href="/examples/radial-rainbows/">Radial Rainbows</a></li>
+  <li><a href="/examples/meta-balls/">Meta Balls</a></li>
+  <li><a href="/examples/voronoi/">Voronoi</a></li>
+  <li><a href="/examples/future-splash/">Future Splash</a></li>
+  <li><a href="/examples/smoothing/">Smoothing</a></li>
+  <li><a href="/examples/spiral-raster/">Spiral Raster</a></li>
+  <li><a href="/examples/division-raster/">Division Raster</a></li>
+  <li><a href="/examples/q-bertify/">Q-bertify</a></li>
+  <li><a href="/examples/path-intersections/">Path Intersections</a></li>
+  <li><a href="/examples/path-simplification/">Path Simplification</a></li>
+  <li><a href="/examples/hit-testing/">Hit Testing</a></li>
+  <li><a href="/examples/bouncing-balls/">Bouncing Balls</a></li>
+</ul>
+  </li>
+  <li><a href="/showcase/">Showcase</a>
+  </li>
+  <li class="spacer"></li>
+  <li><a href="/tutorials/">Tutorials</a>
+  </li>
+  <li><a href="/reference/">Reference</a>
+  </li>
+  <li><a href="http://sketch.paperjs.org/">Sketch</a>
+  </li>
+  <li class="spacer"></li>
+  <li><a href="/download/">Download</a>
+  </li>
+  <li><a href="/donation/">Donation</a>
+  </li>
+  <li><a href="/license/">License</a>
+  </li>
+  <li class="spacer"></li>
+  <li><a href="http://groups.google.com/group/paperjs" target="_blank">Mailing List</a>
+  </li>
+  <li><a href="http://twitter.com/PaperJS" target="_blank">Follow on Twitter</a>
+  </li>
+  <li><a href="http://github.com/paperjs/paper.js" target="_blank">Watch on Github</a>
+  </li>
+</ul>
+    </nav>
+<article><div class="paperscript">
+<div class="buttons">
+<div class="button run" style="margin-right: 8px;">Source</div>
+<div class="explain hidden">To run it again, simply press press <b>Run</b> →</div>
+</div>
+<div class="source hidden" style="border-width: 0px 0px 0px 1px; width: 1215px; height: 685px;"><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 262px; left: 39px;"><textarea wrap="off" autocorrect="off" autocapitalize="off" style="position: absolute; padding: 0px; width: 1px; height: 1em;"></textarea></div><div class="CodeMirror-scrollbar" style="z-index: -2; visibility: hidden; display: none;"><div class="CodeMirror-scrollbar-inner"></div></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1" draggable="false"><div style="position: relative;"><div style="position: relative; top: 0px;"><div class="CodeMirror-gutter" style="height: 812px;"><div class="CodeMirror-gutter-text"><pre>1</pre><pre>2</pre><pre>3</pre><pre>4</pre><pre>5</pre><pre>6</pre><pre>7</pre><pre>8</pre><pre>9</pre><pre>10</pre><pre>11</pre><pre>12</pre><pre>13</pre><pre>14</pre><pre>15</pre><pre>16</pre><pre>17</pre><pre>18</pre><pre>19</pre><pre>20</pre><pre>21</pre><pre>22</pre><pre>23</pre><pre>24</pre><pre>25</pre><pre>26</pre><pre>27</pre><pre>28</pre><pre>29</pre><pre>30</pre><pre>31</pre><pre>32</pre><pre>33</pre><pre>34</pre><pre>35</pre><pre>36</pre><pre>37</pre><pre>38</pre><pre>39</pre><pre>40</pre><pre>41</pre><pre>42</pre><pre>43</pre><pre>44</pre></div></div><div class="CodeMirror-lines"><div style="position: relative; z-index: 0; outline: none; min-width: 424px; margin-left: 31px;"><div style="position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden;"><pre>}<span> </span></pre></div><pre class="CodeMirror-cursor" style="top: 252px; left: 0px; visibility: hidden;">&nbsp;</pre><pre class="CodeMirror-cursor" style="visibility: hidden; left: 415px;">&nbsp;</pre><div style="position: relative; z-index: -1; display: none;"><div class="CodeMirror-selected" style="position: absolute; left: 0px; top: 0px; right: -1px; height: 774px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 0px; top: 774px; right: 1167px; height: 18px;"></div></div><div style=""><pre><span class="cm-comment">// Adapted from the following Processing example:</span></pre><pre><span class="cm-comment">// http://processing.org/learning/topics/follow3.html</span></pre><pre> </pre><pre><span class="cm-comment">// The amount of points in the path:</span></pre><pre><span class="cm-keyword">var</span> <span class="cm-variable">points</span> = <span class="cm-number">25</span>;</pre><pre> </pre><pre><span class="cm-comment">// The distance between the points:</span></pre><pre><span class="cm-keyword">var</span> <span class="cm-variable">length</span> = <span class="cm-number">35</span>;</pre><pre> </pre><pre><span class="cm-keyword">var</span> <span class="cm-variable">path</span> = <span class="cm-keyword">new</span> <span class="cm-variable">Path</span>({</pre><pre><span class="cm-tab">    </span><span class="cm-property">strokeColor</span>: <span class="cm-string">'#000000'</span>,</pre><pre><span class="cm-tab">    </span><span class="cm-property">strokeWidth</span>: <span class="cm-number">20</span>,</pre><pre><span class="cm-tab">    </span><span class="cm-property">strokeCap</span>: <span class="cm-string">'round'</span></pre><pre>});</pre><pre> </pre><pre><span class="cm-keyword">var</span> <span class="cm-variable">start</span> = <span class="cm-variable">view</span>.<span class="cm-property">center</span> / [<span class="cm-number">10</span>, <span class="cm-number">1</span>];</pre><pre><span class="cm-keyword">for</span> (<span class="cm-keyword">var</span> <span class="cm-variable">i</span> = <span class="cm-number">0</span>; <span class="cm-variable">i</span> &lt; <span class="cm-variable">points</span>; <span class="cm-variable">i</span>++)</pre><pre><span class="cm-tab">    </span><span class="cm-variable">path</span>.<span class="cm-property">add</span>(<span class="cm-variable">start</span> + <span class="cm-keyword">new</span> <span class="cm-variable">Point</span>(<span class="cm-variable">i</span> * <span class="cm-variable">length</span>, <span class="cm-number">0</span>));</pre><pre> </pre><pre><span class="cm-keyword">function</span> <span class="cm-variable">onMouseMove</span>(<span class="cm-def">event</span>) {</pre><pre><span class="cm-tab">    </span><span class="cm-variable">path</span>.<span class="cm-property">firstSegment</span>.<span class="cm-property">point</span> = <span class="cm-variable-2">event</span>.<span class="cm-property">point</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-keyword">for</span> (<span class="cm-keyword">var</span> <span class="cm-def">i</span> = <span class="cm-number">0</span>; <span class="cm-variable-2">i</span> &lt; <span class="cm-variable">points</span> - <span class="cm-number">1</span>; <span class="cm-variable-2">i</span>++) {</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">segment</span> = <span class="cm-variable">path</span>.<span class="cm-property">segments</span>[<span class="cm-variable-2">i</span>];</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">nextSegment</span> = <span class="cm-variable-2">segment</span>.<span class="cm-property">next</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">vector</span> = <span class="cm-variable-2">segment</span>.<span class="cm-property">point</span> - <span class="cm-variable-2">nextSegment</span>.<span class="cm-property">point</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">vector</span>.<span class="cm-property">length</span> = <span class="cm-variable">length</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">nextSegment</span>.<span class="cm-property">point</span> = <span class="cm-variable-2">segment</span>.<span class="cm-property">point</span> - <span class="cm-variable-2">vector</span>;</pre><pre><span class="cm-tab">    </span>}</pre><pre><span class="cm-tab">    </span><span class="cm-variable">path</span>.<span class="cm-property">smooth</span>({ <span class="cm-property">type</span>: <span class="cm-string">'continuous'</span> });</pre><pre>}</pre><pre> </pre><pre><span class="cm-keyword">function</span> <span class="cm-variable">onMouseDown</span>(<span class="cm-def">event</span>) {</pre><pre><span class="cm-tab">    </span><span class="cm-variable">path</span>.<span class="cm-property">fullySelected</span> = <span class="cm-atom">true</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">clrMap</span> = <span class="cm-variable">path</span>.<span class="cm-property">strokeColor</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-variable-2">clrMap</span>[<span class="cm-string">'red'</span>] += <span class="cm-number">0.1</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-variable-2">clrMap</span>[<span class="cm-string">'blue'</span>] += <span class="cm-number">0.1</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-variable-2">clrMap</span>[<span class="cm-string">'green'</span>] += <span class="cm-number">0.1</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-variable">path</span>.<span class="cm-property">strokeColor</span> = <span class="cm-variable-2">clrMap</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">path</span>.<span class="cm-property">strokeColor</span>);</pre><pre>}</pre><pre> </pre><pre><span class="cm-keyword">function</span> <span class="cm-variable">onMouseUp</span>(<span class="cm-def">event</span>) {</pre><pre><span class="cm-tab">    </span><span class="cm-variable">path</span>.<span class="cm-property">fullySelected</span> = <span class="cm-atom">false</span>;</pre><pre>}</pre></div></div></div></div></div></div></div></div><script type="text/paperscript" canvas="canvas-1" data-paper-ignore="true">// Adapted from the following Processing example:
+// http://processing.org/learning/topics/follow3.html
+
+// The amount of points in the path:
+var points = 25;
+
+// The distance between the points:
+var length = 35;
+
+var path = new Path({
+  strokeColor: '#000000',
+  strokeWidth: 20,
+  strokeCap: 'round'
+});
+
+var start = view.center / [10, 1];
+for (var i = 0; i < points; i++)
+  path.add(start + new Point(i * length, 0));
+
+function onMouseMove(event) {
+  path.firstSegment.point = event.point;
+  for (var i = 0; i < points - 1; i++) {
+    var segment = path.segments[i];
+    var nextSegment = segment.next;
+    var vector = segment.point - nextSegment.point;
+    vector.length = length;
+    nextSegment.point = segment.point - vector;
+  }
+  path.smooth({ type: 'continuous' });
+}
+
+function onMouseDown(event) {
+  path.fullySelected = true;
+  var clrMap = path.strokeColor;
+  clrMap['red'] += 0.1;
+  clrMap['blue'] += 0.1;
+  clrMap['green'] += 0.1;
+  path.strokeColor = clrMap;
+  console.log(path.strokeColor);
+}
+
+function onMouseUp(event) {
+  path.fullySelected = false;
+}</script>
+<div class="canvas">
+<canvas resize="true" id="canvas-1" width="2432" height="564" data-paper-scope="1" style="-webkit-user-drag: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" class=""></canvas>
+</div>
+</div>
+</article>
+  
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
